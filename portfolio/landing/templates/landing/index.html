@@ -1,0 +1,124 @@
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>ПОРТФОЛИО</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static 'landing/css/style.css' %}">
+    </head>
+<body onload="">
+    <!-- header(шапка) -->
+    <div id="upper">
+        <a href="https://github.com/SomeITperson?tab=repositories" target="_blank"><img src="{% static 'landing/images/GitHub.png' %}" class="git"></a>
+        <h1>Рябов Роман</h1>
+        <div class="btn">
+            <a href="#" class="title">портфолио</a>
+        </div>
+        <div class="navbar">
+            <div id="first" class="curs">проекты<hr></div>
+            <div id="second" class="curs">стек<hr></div>
+            <div id="third" class="curs">о себе<hr></div>
+        </div>
+    </div>
+    <hr>
+    <!-- Конец шапки-->
+    <!-- Первое меню -->
+    <div id="menu-1" class="menu-1">
+        <h1 class="projects">проекты</h1>
+        <!-- 1 -->
+        <div class="project-1 pr1" id="card_1" style="background-image: url({% static 'landing/images/orhideia.png' %});">
+            <div class="pr-name">Online shop</div>
+            <div class="click">
+                <a href="https://www.orhideia.online" class="click-link" target="_blank">click<hr class="click-hr"></a>
+            </div>
+            <div class="photo-left" id="ph1"></div>
+            <div class="links">
+                <a href="#" target="_blank"></a>
+            </div>
+            <div class="project-text"></div>
+        </div>
+        <!-- 2 -->
+        <div class="project-2 pr2" id="card_2" style="background-image: url({% static 'landing/images/vk.png' %});">
+            <div class="pr-name" id="pr_name">vk bot</div>
+            <div class="click" id="click">
+                <a href="https://github.com/SomeITperson/vk_bot" target="_blank" class="click-link">click<hr class="click-hr"></a>
+            </div>
+            <div class="photo-left" id="ph2"></div>
+            <div class="links">
+                <a href="#" target="_blank"></a>
+            </div>
+            <div class="project-text"></div>
+        </div>
+        <!-- 3 -->
+        <div class="project-1 pr3" id="card_1" style="background-image: url({% static 'landing/images/game.png' %});">
+            <div class="pr-name">game</div>
+            <div class="click">
+                <a href="https://github.com/SomeITperson/game" class="click-link" target="_blank">click<hr class="click-hr"></a>
+            </div>
+            <div class="photo-left" id="ph1"></div>
+            <div class="links">
+                <a href="#" target="_blank"></a>
+            </div>
+            <div class="project-text"></div>
+        </div>
+        <!-- 4 -->
+        <div class="project-2 pr4" id="card_2" style="background-image: url({% static 'landing/images/turtle.png' %});">
+            <div class="pr-name turtle" id="pr_name">turtle race</div>
+            <div class="click" id="click">
+                <a href="https://github.com/SomeITperson/Turtle_race" class="click-link" target="_blank">click<hr class="click-hr"></a>
+            </div>
+            <div class="photo-left" id="ph2"></div>
+            <div class="links">
+                <a href="#" target="_blank"></a>
+            </div>
+            <div class="project-text"></div>
+        </div>
+        <!-- 5 -->
+        <div class="project-1 pr5" id="card_1" style="background-image: url({% static 'landing/images/phone.png' %});">
+            <div class="pr-name">phone number</div>
+            <div class="click">
+                <a href="https://github.com/SomeITperson/phone_number" class="click-link" target="_blank">click<hr class="click-hr"></a>
+            </div>
+            <div class="photo-left" id="ph1"></div>
+            <div class="links">
+                <a href="#" target="_blank"></a>
+            </div>
+            <div class="project-text"></div>
+        </div>
+        <!--  -->
+        <hr class="hr-2nd">
+        <!--  -->
+        <div id="menu-2" class="stack">
+            <h1 class="projects stack">стек</h1>
+            <div class="python">
+                <div class="title-menu"><span>python, django</span></div><hr class="hr-menu">
+                <div class="photo-center"><img class="photo-center-img python-img" src="{% static 'landing/images/python-django.png' %}"></div>
+            </div>            
+            <div class="html css">
+                <div class="title-menu"><span>html, css</span></div>
+                <hr class="hr-menu html-css-hr">
+                <div class="photo-center"><img class="photo-center-img html-css-img" src="{% static 'landing/images/html-css.png' %}"></div>
+            </div>            
+            <div class="js">
+                <div class="title-menu"><span>js</span></div>
+                <hr class="hr-menu js-hr">
+                <div class="photo-center"><img class="photo-center-img js-img" src="{% static 'landing/images/js.png' %}"></div>
+            </div>
+        </div>
+        <div id='about' class="about">
+            <hr class="hr-3rd">
+            <h1 class="projects">о себе</h1>
+            <div class="myself-img"><img src=""></div>
+            <div class="myself-about">Привет, меня зовут <span>Рома</span>. Учусь в Пермском политехе на техническую специальность. С августа 2021 самостоятельно изучаю <span>python</span>, с января нынешнего года начал учить <span>Django</span>. Вслед за ним, с марта приступил к изучению <span>html</span>, <span>css</span> и с середины апреля начал осваивать <span>js</span>. Работ в моём портфолио не так много, как хотелось бы, <span>первый сайт("Орхидея")</span> я писал 3 недели, так как по ходу всё изучал, в основном были проблемы с front'ом. В итоге получился сайт не самый красивый, но это была моя первая + - масштабная работа :)<br></div>
+        </div>
+        <!--  -->
+    </div>
+    <div class="footer">
+        <div class="copyright">© 2022 Рябов Роман</div>
+    </div>
+    <!-- Конец первого меню-->
+    <script type="text/javascript" src="{% static 'landing/js/script.js' %}">
+
+    </script>
+</body>
+</html>

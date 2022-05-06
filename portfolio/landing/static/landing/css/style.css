@@ -1,0 +1,498 @@
+@font-face {
+	font-family: "Typometry_Regular"; 
+	src: url("/static/fonts/Etna.otf") format('truetype');
+	font-style: normal;
+	font-weight: normal; 
+} 
+
+@font-face {
+	font-family: "Moon"; 
+	src: url("/static/fonts/MoonlessSC-Regular.otf") format('truetype');
+	font-style: normal;
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "NeutralFace"; 
+	src: url("/static/fonts/NeutralFace.otf") format('truetype');
+	font-style: normal;
+	font-weight: normal; 
+}
+
+/*Навигация*/
+/*Конец навигации*/
+/*Шапка*/
+
+@keyframes gradient {
+	0% {
+		background-size: 100% 100%;
+	}
+
+	25% {
+		background-size: 200% 200%;
+	}
+
+	50% {
+		background-size: 300% 300%;
+	}
+
+	75% {
+		background-size: 200% 200%;
+	}
+
+	100% {
+		background-size: 100% 100%;
+	}
+}
+
+@keyframes horizontalLine {
+		0% {
+			width: 0%;
+			opacity: 0;
+			font-size: 5px;
+		}
+
+		100% {
+			opacity: 1;
+			width: 100%;
+			font-size: 25px;
+		}
+}
+
+@keyframes secondEl {
+		0%, 100% {
+			margin-left: 57%;
+		}
+
+		50% {
+			margin-left: 70%;
+		}
+}
+
+@keyframes thirdEl {
+		0%, 100% {
+			margin-left: 63%;
+		}
+
+		50% {
+			margin-left: 75%;
+		}
+}
+
+@keyframes click {
+	0%, 100% {
+		color: #25f5f5;
+	}
+
+	50% {
+		color: white;
+	}
+}
+
+#upper {
+	width: 100%;
+	height: 500px;
+	background-size: 200% 200%;
+	animation: gradient 10s ease infinite;
+	background-repeat: none;
+	background : radial-gradient(circle, rgba(63,94,251,1) 20%, rgba(255,0,0,1) 100%);
+}
+
+.btn {
+	text-transform: uppercase;
+	font-size: 80px;
+	letter-spacing: 3px;
+	height: 20px;
+	width: auto;
+	text-align: center;
+	padding-top: 120px;
+	letter-spacing: 20px;
+	font-family: "Typometry_Regular";
+}
+
+.btn:before {
+	content: 'my';
+	margin-right: 20px;
+	border: 2px white solid;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 20px;
+	background: white;
+	font-weight: bold;
+	font-family: "Moon";
+	border-width: 10px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	margin-left: 1300px;
+	padding-top: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+body {
+	width: 100%;
+}
+
+a, .click-link {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	transition: 0.5s;
+}
+
+/*.btn:hover {
+	transform: skew(-10deg);
+	transition: 0.5s;
+}*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	background: black;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 25px;
+	padding-top: 10px;
+	text-align: center;
+	margin-top: 200px;
+	animation: horizontalLine 1.5s ease;
+}
+
+#first, #second, #third {
+	border: 3px solid white;
+	border-radius: 10px;
+	width: 12%;
+	height: 35px;
+	color: white;
+	font-family: Typometry_Regular;
+	position: relative;
+	transition: 1s;
+	cursor: pointer;
+}
+
+#first hr, #second hr, #third hr {
+	height: 2px;
+	width: 0%;
+	align-items: center;
+	margin: 0 25% 0 25%;
+}
+
+#first:before, #second:before, #third:before {
+	content: '';
+	height: 105%;
+	width: 10%;
+	background: white;
+	position: absolute;
+	border-radius: 0 10px 10px 0;
+	transition: 1s;
+}
+
+#first:hover:before, #second:hover:before, #third:hover:before {
+	background: #b2aab3;
+	background: black;
+	transition: 0.5s;
+}
+
+#first:hover, #second:hover, #third:hover {
+	border-color: black;
+	transition: 0.5s;
+	color: black;
+}
+
+#first:before {
+	margin-left: 71%;
+}
+
+#second:before {
+	margin-left: 58%;
+	animation: secondEl 2s ease;
+}
+
+#third:before {
+	margin-left: 63%;
+	animation: thirdEl 2s ease;
+}
+
+.git {
+	float: left;
+	margin-left: 82%;
+	margin-top: 18px;
+}
+
+/*html {
+	scroll-behavior: smooth;
+}*/
+
+/*Конец шапки*/
+
+/*Первое меню*/
+
+.menu-1 {
+	background: linear-gradient(167deg, rgba(233,236,253,1) 0%, rgba(222,222,222,1) 100%);
+	width: 100%;
+	height: 4100px;
+}
+
+.projects {
+	margin:0;
+	padding-top: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	color: black;
+	font-family: Typometry_Regular;
+	font-weight: normal;
+}
+
+.project-1 {
+	width: 700px;
+	height: 300px;
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,33,33,1) 100%);
+	margin-left: 150px;
+	margin-top: 125px;
+	border-radius: 10px;
+	transition: 0.3s;
+	position: relative;
+}
+
+.project-1:hover, .project-2:hover, .python:hover, .html:hover, .js:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: 0.3s;
+}
+
+.project-2 {
+	width: 700px;
+	height: 300px;
+	background: radial-gradient(circle, rgba(53,252,255,1) 0%, rgba(255,181,23,1) 100%);
+	float: right;
+	margin-top: 70px;
+	margin-right: 150px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.pr-name {
+	color: white;
+	font-family: Moon;
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	padding-top: 15%;
+}
+
+.pr1 {
+	background-image: url('landing/images/orhideia.png');
+}
+
+.pr2 {
+	background-image: url('images/vk.png');
+}
+
+.pr3 {
+	margin-top: 440px;
+	background-image: url('images/game.png');
+}
+
+.pr4 {
+	background-image: url('images/turtle.png');
+}
+
+.turtle {
+	color: black;
+}
+
+.pr5 {
+	margin-top: 440px;
+	background-image: url('images/phone.png');
+}
+
+.click, .click-link {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	animation: click 2s ease infinite;
+}
+
+.click-hr {
+	margin: 0 47% 0 47%;
+	background: white;
+	height: 2px;
+}
+
+.hr-2nd {
+	width: 80%;
+	height: 2px;
+	margin: 0 10% 0 10%;
+	margin-top: 10%;
+}
+
+.python {
+	width: 700px;
+	height: 300px;
+	background: green;
+	margin-left: 150px;
+	margin-top: 100px;
+	border-radius: 10px;
+}
+
+.html {
+	width: 700px;
+	height: 300px;
+	background: green;
+	float: right;
+	margin-top: 70px;
+	margin-right: 150px;
+	border-radius: 10px;
+}
+
+.js {
+	width: 700px;
+	height: 300px;
+	background: green;
+	margin-left: 150px;
+	margin-top: 440px;
+	border-radius: 10px;
+}
+
+.python, .html, .js {
+	background: radial-gradient(circle, rgba(0,0,0,1) 52%, rgba(255,185,8,1) 52%);
+	border: 1px black solid;
+	transition: 0.3s;
+	background-size: 200% 200%;
+	/**/
+}
+
+.hr-3rd {
+	width: 80%;
+	height: 2px;
+	margin: 0 10% 0 10%;
+	margin-top: 7%;
+}
+
+/*Конец первого меню*/
+
+/*Второе меню*/
+.title-menu {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 30px;
+	font-family: Moon;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
+.hr-menu {
+	width: 50%;
+	margin: 0 25% 0 25%;
+	background: white;
+	height: 2px;
+}
+
+.html-css-hr {
+	width: 34%;
+	margin: 0 33% 0 33%;
+}
+
+.js-hr {
+	width: 14%;
+	margin: 0 43% 0 43%;
+}
+
+.photo-center {
+	width: 100%;
+}
+
+.photo-center-img {
+	width: 150px;
+	height: 150px;
+	margin-left: 40%;
+	padding-top: 30px;
+}
+
+.python-img {
+	width: 280px;
+	margin-left: 29%;
+}
+
+.html-css-img {
+	width: 310px;
+	margin-left: 28%;
+}
+
+.js-img {
+	margin-left: 30%;
+	padding-top: 25px;
+	width: 280px;
+}
+
+/*Конец второго меню*/
+/*About*/
+.myself-about {
+	width: 35%;
+	font-size: 20px;
+	font-family: "NeutralFace";
+	word-spacing: 5px;
+	padding-left: 35%;
+	padding-top: 50px;
+}
+
+.myself-about span {
+	font-weight: bold;
+}
+
+.myself-about:before {
+	content: '"';
+	font-size: 70px;
+	margin-left: -40px;
+	background: grey;
+	height: 50px;
+	margin-bottom: 30px;
+	border-radius: 100px;
+	position: absolute;
+}
+
+.myself-about:after {
+	content: '"';
+	font-size: 70px;
+	margin-left: 32%;
+	background: grey;
+	height: 50px;
+	border-radius: 100px;
+	position: absolute;
+	margin-top: -50px;
+}
+/*Конец*/
+
+/*footer*/
+.footer {
+	background: #60656c;
+	color: white;
+	height: 80px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 30px;
+}
+/*Конец footer'а*/
